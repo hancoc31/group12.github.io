@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        /* Basic styling for the review section */
+        body {
+            background-color: lightblue; /* Set background color to light blue */
+            color: #000; /* Set default text color to black */
+        }
+        .review-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .review {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .review h3 {
+            margin-top: 0;
+            color: #B48CFC; /* Set color to #B48CFC */
+        }
+        .stars {
+            color: #5DBCD2; /* Set color to #5DBCD2 */
+        }
+        .review img {
+            width: 100px; /* Set the width to your preferred size */
+            height: auto; /* Maintain the aspect ratio */
+        }
+        /* Style for the review form */
+        .review-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        /* Style for the Last Worked On section */
+        .last-worked {
+            margin-top: 20px;
+            text-align: right;
+            color: #666;
+        }
+        /* Style for the hyperlink section */
+        .hyperlink {
+            margin-top: 20px;
+            text-align: center;
+        }
+        /* Style for the header */
+        h1 {
+            color: #B48CFC; /* Set color to #B48CFC */
+        }
+    </style>
+</head>
+<body>
+    <div class="review-container">
+        <h1>Customer Reviews</h1>
+        <!-- Display existing reviews -->
+        <div class="review">
+            <img src="Henry.jpeg" /> <!-- Add image source here -->
+            <div>
+                <h3>Henry J. Waternoose III</h3>
+                <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p> <!-- 5 stars -->
+                <p>"The decision to switch from scream harvesting to laughter collection was a tough
+                    one, but I have to say, it was the right move. The Laugh Factory has not only boosted morale among the employees but has also brought in more positive energy into Monstropolis. I've never seen so many happy faces before. It's a win-win situation for everyone."
+                </p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="George.webp" /> <!-- Add image source here -->
+            <div>
+                <h3>George Sanderson</h3>
+                <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p> <!-- 4 stars -->
+                <p>"I used to be the star of the Scare Floor with my awesome scream collection skills.
+                    The transition to the Laugh Factory was a bit strange at first, but now I'm getting used to it. People seem to enjoy my laugh-inducing shenanigans, and hey, it's a lot less physically demanding than scaring! I might just grow to like this laugh stuff."
+                </p>
+            </div>
+        </div>
+        <div class="review">
+            <img src="Celia.png" /> <!-- Add image source here -->
+            <div>
+                <h3>Celia Mae</h3>
+                <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p> <!-- 4 stars -->
+                <p>"While I initially had my doubts about the transition from screams to laughs, I must
+                    say that the Laugh Factory has grown on me. The energy here is contagious, and it's nice to see everyone laughing instead of screaming in terror. I still miss the screams a bit, but I've adapted, and I've got to admit, the new job is much less stressful!"
+                </p>
+            </div>
+        </div>
+        <!-- Add a new review form -->
+        <div class="review-form">
+            <h2>Add a Review</h2>
+            <form id="review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="message">Review:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <label for="stars">Stars:</label>
+                <select id="stars" name="stars" required>
+                    <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                    <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                    <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                    <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                    <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                </select><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Last Worked On section -->
+        <div class="last-worked">
+            Last Worked On by Brandon Turkofsky: <!-- You can use JavaScript to dynamically display the last worked on date and time here -->
+        </div>
+        <!-- Add a hyperlink section -->
+        <div class="hyperlink">
+            <a href="https://en.wikipedia.org/wiki/Monsters,_Inc">Learn More About Monsters INC.</a>
+        </div>
+    </div>
+    <script>
+        // JavaScript to display the last worked on date and time
+        document.addEventListener("DOMContentLoaded", function() {
+            const lastWorkedElement = document.querySelector(".last-worked");
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            const lastWorkedDate = new Date();
+            lastWorkedElement.textContent = "Last Worked On: " + lastWorkedDate.toLocaleDateString('en-US', options);
+        });
+    </script>
+</body>
+<nav>
+        <ul>
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="aboutus.html">Learn about our Company!</a></li>
+            <li><a href="products.html">View our Products & Services</a></li>
+            <li><a href="teampage.html">Meet our Hilarious Team</a></li>
+        </ul>
+    </nav>
+</html>
