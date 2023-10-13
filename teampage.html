@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsters Inc. Team</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF; /* Corrected to white */
+            color: #5DBCD2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #B48CFC; /* Theme color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #B48CFC; /* Theme color */
+        }
+        .team-member {
+            background-color: #fff;
+            border: 1px solid #000;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .team-member img {
+            max-width: 40%; /* Adjust the width as needed */
+            max-height: 40%; /* Adjust the height as needed */
+            display: block;
+            margin: 0 auto; /* Center-align the images */
+            border-radius: 50%; /* Add border-radius for a circular shape */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff; /* Theme color */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Monsters Inc.</h1>
+        <p>Where laughter and positivity unite!</p>
+    </header>
+
+    <section id="intro">
+        <h2>Our Mission</h2>
+        <p>At Monsters Inc., our success is driven by the dedication, talent, and creativity of our diverse team of monsters and humans. Get to know the leaders and staff who make our mission of spreading laughter and positivity a reality.</p>
+    </section>
+
+    <section id="leadership">
+        <h2>Leadership Team</h2>
+        <div class="team-member">
+            <img src="Sully.png" alt="Sully">
+            <h3>James P. Sullivan (Sully)</h3>
+            <p><strong>Position:</strong> CEO and Founder</p>
+            <p><em>Bio:</em> Sully, the visionary founder of Monsters Inc., has dedicated his life to bringing laughter to Monstropolis. With a heart of gold and a knack for leadership, he has guided our company through transitions and challenges, ensuring our commitment to positivity and innovation remains unwavering.</p>
+        </div>
+        <div class="team-member">
+            <img src="Mike.png" alt="Mike">
+            <h3>Mike Wazowski</h3>
+            <p><strong>Position:</strong> Chief Operating Officer (COO)</p>
+            <p><em>Bio:</em> As Sully's right-hand monster, Mike is responsible for overseeing the day-to-day operations of Monsters Inc. His passion for efficiency, coupled with his humor, keeps our laugh collection and energy conversion processes running smoothly.</p>
+        </div>
+        <div class="team-member">
+            <img src="Celia.png" alt="Celia">
+            <h3>Celia Mae</h3>
+            <p><strong>Position:</strong> Director of Community Engagement</p>
+            <p><em>Bio:</em> Celia Mae is the face of Monsters Inc. in the Monstropolis community. Her dedication to fostering goodwill between monsters and humans is unparalleled. She organizes community events, partnerships, and outreach programs that bring joy to everyone.</p>
+        </div>
+        <div class="team-member">
+            <img src="Roz.png" alt="Roz">
+            <h3>Roz</h3>
+            <p><strong>Position:</strong> Chief Administrative Officer (CAO)</p>
+            <p><em>Bio:</em> Roz is the meticulous mastermind behind our administrative operations. She ensures that our paperwork, compliance, and ethics are always in check, even if her exterior demeanor suggests otherwise.</p>
+        </div>
+    </section>
+
+    <section id="employee-spotlight">
+        <h2>Employee Spotlight</h2>
+        <div class="team-member">
+             <img src="Boo.png" alt="Boo">
+            <h3>Boo</h3>
+            <p><strong>Position:</strong> Lead Laughter Collector</p>
+            <p><em>Bio:</em> Boo, the human girl who once found her way into our world, now plays a pivotal role in our laugh collection efforts. Her ability to connect with both humans and monsters makes her an invaluable asset to our team.</p>
+        </div>
+        <div class="team-member">
+            <img src="George.webp" alt="George">
+            <h3>George Sanderson</h3>
+            <p><strong>Position:</strong> Lead Comedian</p>
+            <p><em>Bio:</em> George has transitioned from a scare expert to a comedy virtuoso. His knack for making people laugh is unmatched, and he's become one of our star performers in the Laugh Factory.</p>
+        </div>
+        <div class="team-member">
+            <img src="Randall.png" alt="Randall">
+            <h3>Randall Boggs</h3>
+            <p><strong>Position:</strong> Environmental Sustainability Manager</p>
+            <p><em>Bio:</em> Randall has found a new purpose in ensuring that our laugh collection and energy conversion processes are environmentally responsible. His dedication to sustainability has earned him the respect of our team and the community.</p>
+        </div>
+    </section>
+
+    <!-- Join Our Team Section -->
+    <section id="join-our-team">
+        <h2>Join Our Team</h2>
+        <p>At Monsters Inc., we believe that diversity and teamwork are the keys to our success. We're always on the lookout for talented individuals who share our passion for spreading joy. Join us in making the world a happier place, one laugh at a time. Check out our <a href="https://en.wikipedia.org/wiki/Monsters_University" target="_blank">Monsters' University Facebook Page</a> to explore opportunities to become a part of our dynamic team.</p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>Last Updated by Bowen Li: <span id="last-updated"></span></p>
+    </footer>
+
+ <script>
+        // JavaScript to display the last worked on date and time
+        document.addEventListener("DOMContentLoaded", function() {
+            const lastWorkedElement = document.querySelector(".last-worked");
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+            const lastWorkedDate = new Date();
+            lastWorkedElement.textContent = "Last Worked On: " + lastWorkedDate.toLocaleDateString('en-US', options);
+        });
+    </script>
+</body>
+<nav>
+        <ul>
+            <li><a href="homepage.html">Homepage</a></li>
+            <li><a href="aboutus.html">Learn about our Company!</a></li>
+            <li><a href="products.html">View our Products & Services</a></li>
+            <li><a href="reviews.html">Customer Reviews</a></li>
+        </ul>
+    </nav>
+    </nav>
+</html>
